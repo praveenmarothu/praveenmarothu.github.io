@@ -1,0 +1,51 @@
+.vwp-content-container
+{
+    background-color: white;
+    border: 0px solid white;
+    box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+    -moz-box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+}
+.vwp-pricing-container
+{
+    background-color: white;
+    border: 0px solid white;
+    box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+    -moz-box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+}
+
+.vwp-marker
+{
+    background-color: rgb(247, 204, 204);
+    cursor: pointer;
+    text-align: center;
+    color: #312e2e;
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.vwp-expensive-marker
+{
+    background-color: rgb(247, 188, 167);
+    overflow: visible;
+}
+.vwp-resonable-marker
+{
+    background-color: rgb(162, 226, 228);
+    overflow: visible;
+}
+.vwp-cheap-marker
+{
+    background-color: rgb(243, 243, 189);
+    overflow: visible;
+}
+.vwp-price-label
+{
+    font-size: 12px;
+    border-top: 0px solid #bccddc;
+    line-height: 17px;
+    background-color: white;
+    font-weight: medium;
+}
