@@ -19,8 +19,8 @@
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-bottom-width: 13px;
-    border-top-width: 13px;
+    border-bottom-width: 19px;
+    border-top-width: 19px;
     border-left: 15px solid black;
 }
 
@@ -30,7 +30,7 @@
     text-align: center;
     color: #312e2e;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 28px;
     padding-right: 10px;
     font-weight: bold;
 }
