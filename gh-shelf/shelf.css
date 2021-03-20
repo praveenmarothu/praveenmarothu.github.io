@@ -1,0 +1,174 @@
+.shelf-container
+{
+    background-color: white;
+    border: 0px solid white;
+    box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+    -moz-box-shadow: 0px 0px 5px -2px rgba(99, 110, 114,1.0) inset;
+}
+
+.shelf-item
+{
+    font-size: 12px;
+    background-color:white;
+    cursor: pointer;
+    border: 0px solid transparent;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    overflow: visible;
+}
+
+.shelf-item.selected .status,.shelf-popup.selected .status
+{
+    color:  rgb(46, 204, 113);
+}
+.shelf-item.selected .hover,.shelf-popup.selected .hover
+{
+    display: inline-block;
+}
+
+.shelf-popup .status
+{
+    position: absolute;
+    z-index:9999;
+    right:35%;
+    top:15%;
+    font-size: 80px;
+    color:transparent;
+
+}
+.shelf-item .status
+{
+    position: absolute;
+    z-index:9999;
+    right:10px;
+    top:0px;
+    font-size: 30px;
+    color:transparent;
+}
+
+
+.shelf-item .magnify
+{
+    position: absolute;
+    z-index:9999;
+    right:5px;
+    top: -3px;
+    font-size: 20px;
+    color:#8395a7;
+}
+
+.shelf-item .imgpane
+{
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+.shelf-item .infopane
+{
+    background-color: #c8d6e5;
+    line-height: 20px;
+    text-align: center;
+    border:1px solid #8395a7;
+}
+
+
+.shelf-item .hover,.shelf-popup .hover
+{
+    display: none;
+    background-image: linear-gradient(360deg, rgba(46, 204, 113,0.30) 30%, rgba(255, 255, 255,0.15) 100%);
+    /*background-color: rgba(46, 204, 113,0.15);*/
+}
+.shelf-item:hover .hover
+{
+    display: inline-block;
+    background-image: linear-gradient(360deg, rgba(69, 170, 242,0.30) 30%, rgba(255, 255, 255,0.15) 100%);
+    
+}
+
+.shelf-popup
+{
+    z-index: 99999;
+    -webkit-transition: height 0.25s,width 0.25s,left 0.25s,top 0.25s;
+    -moz-transition: height 0.25s,width 0.25s,left 0.25s,top 0.25s;
+    -ms-transition: height 0.25s,width 0.25s,left 0.25s,top 0.25s;
+    -o-transition: height 0.25s,width 0.25s,left 0.25s,top 0.25s;
+    transition: height 0.25s,width 0.25s,left 0.25s,top 0.25s;
+
+    background: rgba(200, 214, 229,.75);
+    overflow: hidden;
+    height: 0px;
+    width: 0px;    
+    left:50%;
+    top:50%;
+}
+
+.shelf-popup.visible
+{
+    height: 100%;        
+    width: 100%;    
+    left:0px;
+    top:0px;
+}
+
+.shelf-popup .infopane
+{
+    background-color: #8395a7;
+    line-height: 20px;
+    text-align: center;
+    border:1px solid #8395a7;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.shelf-popup .imgpane
+{
+    border:1px solid #8395a7;
+    background-color: white;
+    background-repeat:no-repeat;
+    background-size: 80%;
+    background-position: center bottom 5px;
+}
+.shelf-popup .close
+{
+    cursor: pointer;
+    position: absolute;
+    z-index:9999;
+    right:5px;
+    top:0px;
+    font-size: 25px;
+    color:rgba(238, 82, 83,1.0);
+}
+
+.shelf-popup .select
+{
+    position: absolute;
+    z-index:9999;
+    left:26%;
+    bottom:110px;
+    background-color: rgb(46, 204, 113);
+    padding:5px 15px 5px 10px;
+    width: 70px;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.shelf-popup .clear
+{
+    position: absolute;
+    z-index:9999;
+    left:26%;
+    bottom:80px;
+    background-color: rgba(238, 82, 83,1.0);
+    padding:5px 15px 5px 10px;
+    width: 70px;
+    color:white;
+    font-size: 14px;    
+    cursor: pointer;    
+    text-align: center;    
+}
